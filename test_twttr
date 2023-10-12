@@ -1,0 +1,14 @@
+from twttr import shorten
+def main():
+    test_shorten()
+def test_shorten():
+
+
+    assert shorten('MASHAOLE')=='MSHL'
+    assert shorten('Mikejunior')=='Mkjnr'
+    assert shorten('mark')=='mrk'
+    assert shorten('Mike junior')=='Mk jnr'
+    assert shorten('12345')=='12345'
+    assert shorten('')==''
+if __name__=="__main__":
+    main()
